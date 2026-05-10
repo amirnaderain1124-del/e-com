@@ -1,0 +1,44 @@
+{
+  "name": "olympic-lifting-store",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.35.3",
+    "@prisma/client": "^6.17.1",
+    "@stripe/stripe-js": "^7.9.0",
+    "clsx": "^2.1.1",
+    "eslint-config-next": "^16.2.6",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.545.0",
+    "next": "^16.2.6",
+    "next-cloudinary": "^6.16.0",
+    "prisma": "^6.17.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "stripe": "^18.5.0",
+    "tailwind-merge": "^3.3.1",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  }
+}

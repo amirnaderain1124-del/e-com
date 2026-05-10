@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#050505"/>
+  <path d="M0 0h1200v630H0z" fill="url(#g)"/>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#050505"/><stop offset=".55" stop-color="#17191d"/><stop offset="1" stop-color="#3b0709"/></linearGradient></defs>
+  <text x="80" y="235" fill="#fff" font-family="Arial" font-size="94" font-weight="900">IRON APEX</text>
+  <text x="84" y="320" fill="#d71920" font-family="Arial" font-size="38" font-weight="900">BUILT FOR MAXIMAL PERFORMANCE</text>
+  <rect x="80" y="400" width="620" height="18" fill="#d71920"/>
+</svg>
