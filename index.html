@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A premium ecommerce storefront for Olympic lifting and strength sports gear, ready for Netlify deployment."
+    />
+    <title>Iron Apex | Premium Strength Sports Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">IRON<span>APEX</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#products">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+      <button class="cart-button" id="cartButton" type="button" aria-label="Open cart">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Competition-grade apparel and gear</p>
+          <h1>Built for maximal performance.</h1>
+          <p>
+            Premium Olympic lifting essentials engineered for explosive pulls,
+            heavy squats, and platform confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">Shop best sellers</a>
+            <a class="button ghost" href="#collections">Explore collections</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stats" aria-label="Store highlights">
+        <article>
+          <strong>1-3 day</strong>
+          <span>UAE shipping</span>
+        </article>
+        <article>
+          <strong>4.9/5</strong>
+          <span>Athlete reviews</span>
+        </article>
+        <article>
+          <strong>30 day</strong>
+          <span>Easy returns</span>
+        </article>
+      </section>
+
+      <section class="section" id="collections">
+        <div class="section-heading">
+          <p class="eyebrow">Featured collections</p>
+          <h2>Platform-ready categories</h2>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <h3>Weightlifting Shoes</h3>
+            <p>Stable heels, locked straps, explosive drive.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Support Gear</h3>
+            <p>Knee sleeves, wrist wraps, belts, and tape.</p>
+          </article>
+          <article class="collection-card">
+            <h3>Training Apparel</h3>
+            <p>Oversized shirts, singlets, compression, and hoodies.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section products-section" id="products">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Best sellers</p>
+            <h2>Engineered for explosive pulls</h2>
+          </div>
+          <label class="search-box">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Shoes, sleeves, belts..." />
+          </label>
+        </div>
+        <div class="filter-row" id="filterRow"></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="section testimonials" id="reviews">
+        <div class="section-heading">
+          <p class="eyebrow">Athlete trusted</p>
+          <h2>Reviews from serious lifters</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>
+            “The sleeves have the perfect rebound out of cleans. Dense, secure,
+            and meet-day ready.”
+            <cite>Amira H., 71kg lifter</cite>
+          </blockquote>
+          <blockquote>
+            “Fast UAE delivery and the shoes feel locked to the platform.”
+            <cite>Khalid R., national competitor</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div>
+          <p class="eyebrow">Newsletter</p>
+          <h2>Get drops, sizing guides, and meet prep notes.</h2>
+        </div>
+        <form id="newsletterForm">
+          <input type="email" placeholder="you@example.com" required />
+          <button class="button primary" type="submit">Join</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-header">
+          <h2>Your cart</h2>
+          <button id="closeCart" type="button" aria-label="Close cart">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">AED 0</strong>
+          </div>
+          <button class="button primary full" id="checkoutButton" type="button">Checkout</button>
+          <p class="muted">Demo checkout. Connect Stripe or Netlify Forms for production orders.</p>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="site-footer">
+      <p>IRON<span>APEX</span></p>
+      <span>Static ecommerce demo ready for Netlify deployment.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
